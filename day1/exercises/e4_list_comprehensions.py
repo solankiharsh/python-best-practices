@@ -12,7 +12,7 @@ for item in ingredients:
 print(ingredients_lowercase)
 
 # List comprehension
-ingredients_lowercase = ...  # your code
+ingredients_lowercase = [item.lower() for item in ingredients]
 print(ingredients_lowercase)
 
 
@@ -26,5 +26,5 @@ for lang in languages:
 print(language_lengths)  # prints {'C': 1, 'Java': 4, 'Python': 6, 'JavaScript': 10}
 
 # Dict comprehension
-language_lengths = ...   # your code
+language_lengths = {lang: len(lang) for lang in languages}
 print(language_lengths)

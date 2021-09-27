@@ -7,6 +7,9 @@ pip install pytest
 Run from the terminal (project's root folder):
 python -m pytest -v
 
+python - pytest (will give you the working directory)
+rootdir: /Users/Z0084K9/PycharmProjects/python-best-practices
+
 Extra:
 Choose Pytest in PyCharm Preferences -> Python Integrated Tools
 """
@@ -31,5 +34,6 @@ def round_up(x: float) -> int:
     return math.ceil(x)
 
 
-def hypotenuse():
-    ...
+def hypotenuse(a, b):
+    c = (a ** 2 + b ** 2) ** 0.5
+    return c

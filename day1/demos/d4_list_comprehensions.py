@@ -37,3 +37,4 @@ print(squares)  # prints {1: 1, 2: 4, 3: 9, 4: 16}
 employees = {"john": 1234, "claire": 1235, "danny": 1236}
 employees = {v: k for k, v in employees.items()}
 print(employees)
+

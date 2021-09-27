@@ -25,6 +25,7 @@ def greet(name: str = None) -> str:
 
 # print(greet(100))  # warning!
 print(greet("Amy"))
+#print(greet(100))
 
 
 e: List[int] = [1, 2, 3]

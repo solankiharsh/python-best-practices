@@ -4,10 +4,9 @@ Demo exception handling
 
 # ZeroDivision
 try:
-    print(1 / 0)
+    print(1/0)
 except ZeroDivisionError:
     print("Not possible to divide by zero")
-
 
 # Ask for user input without exception handling
 number = input("Give me a number please ")
@@ -20,6 +19,13 @@ print(number * 2)
 # Exception handling (bare except)
 try:
     number = int(input("Give me a number please "))
+    print(100 / number)
+except:
+    print("Not a valid number")
+
+
+try:
+    number = int(input("Give me a number please"))
     print(100 / number)
 except:
     print("Not a valid number")
@@ -44,7 +50,7 @@ finally:
     print("Goodbye, end of the program")
 
 
-# Extra
+# Extra / custom exceptions
 class NegativeNumberError(Exception):
     """Custom exception for negative numbers"""
 

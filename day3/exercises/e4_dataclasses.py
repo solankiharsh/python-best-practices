@@ -17,3 +17,13 @@ class Product:
         self.name = name
         self.description = description
         self.price = price
+
+
+@dataclass()
+class ProductDataclass():
+    identifier: int
+    name: str
+    price: int
+    description: str = None
+
+

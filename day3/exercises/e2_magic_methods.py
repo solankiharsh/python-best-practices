@@ -15,3 +15,20 @@ jessica = Person("Jessica", 180)
 scott = Person("Scott", 175)
 print(jessica > scott)  # prints True
 """
+
+
+class Person():
+
+    def __init__(self, name, height):
+        self.name = name
+        self.height = height
+
+    def __gt__(self, other):
+        return self.height > other.height
+
+    def __str__(self):
+        return f"Person named {self.name}"
+
+jessica = Person("Jessica", 180)
+scott = Person("Scott", 175)
+print(jessica > scott)  # prints True

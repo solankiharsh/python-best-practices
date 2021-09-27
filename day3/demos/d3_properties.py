@@ -25,13 +25,13 @@ class Person:
     def set_name(self, value):
         if len(value) <= 1:
             raise ValueError("The name is too short")
-        self._name = value
+        self._name = value  # _ before name basically indicates private to all the developers
 
     name = property(get_name, set_name)  # important!
 
 
 person = Person("Daniel")
-# person = Person("D")
+#person = Person("D")
 print(person)
 
 

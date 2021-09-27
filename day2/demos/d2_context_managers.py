@@ -15,6 +15,8 @@ finally:
     file.close()
 print(file.closed)
 
+#import this (opens zen of python)
+
 # Best
 with open("zen.txt", "w") as file:
     file.write("Simple is better than complex")

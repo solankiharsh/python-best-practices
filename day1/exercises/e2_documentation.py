@@ -6,6 +6,7 @@ Follow PEP 257: https://www.python.org/dev/peps/pep-0257/
 
 # 1
 def square(n):
+    """A function to calculate area of a square"""
     return n * n
 
 
@@ -27,4 +28,5 @@ class Dog:
         self.name = name
 
     def bark(self):
+        """Function to make the doc bark"""
         print(f"{self.name} says whoof!")

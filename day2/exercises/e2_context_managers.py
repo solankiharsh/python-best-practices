@@ -19,10 +19,23 @@ def main():
 
 
 def write_to_file(text):
-    file = open("exercise.txt", "w")
-    file.write(text)
-    file.close()
+    with open("exercise.txt", "w") as f:
+        f.write(text)
 
+
+# Custom context manager
+class DemoContextManager:
+    def __enter__(self):
+        print("Entering the context")
+
+    def __exit__(self, *args):
+        print("Exiting the context")
+
+
+with DemoContextManager():
+    text = "Explicit is better than implicit 2."
+    with open("exercise.txt", "w") as f:
+        f.write(text)
 
 if __name__ == "__main__":
     main()

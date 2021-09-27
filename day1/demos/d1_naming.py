@@ -11,9 +11,10 @@ data = ...
 temp = ...
 df = ...
 list = ...
-l = ...
-distance = ...
-fname = ...  # abbreviated
+print = ...
+l = ... #not specific enough
+distance = ... #not telling if it is in kms m or what
+fname = ...  # abbreviated # write out full words so that it is more readable
 
 
 # Good examples
@@ -63,3 +64,14 @@ class RectangleShape:
 
     def calculate_area(self):
         return self.width * self.length
+
+
+class RectangleShape:
+
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def calculate_area(self):
+        return self.width * self.height
+

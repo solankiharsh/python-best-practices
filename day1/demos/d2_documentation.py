@@ -29,6 +29,5 @@ class Rectangle:
         """Return the area of the rectangle."""
         return self.width * self.height
 
-
 print(Rectangle.__doc__)
 print(Rectangle.area.__doc__)

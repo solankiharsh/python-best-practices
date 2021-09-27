@@ -17,14 +17,14 @@ class BankAccount:
 
     # Optional
     def __repr__(self):
-        return f'BankAccount("{self.owner}")'
+        return f'BankAccount("{self.owner}")' #repr(account_john)
 
     # Added later during the demo
-    def __gt__(self, other):
+    def __gt__(self, other): # greater than
         return self.balance > other.balance
 
     # Added later during the demo
-    def __eq__(self, other):
+    def __eq__(self, other): # equal to
         return self.balance == other.balance
 
 
@@ -35,7 +35,7 @@ print(account_john)
 
 # Compare two accounts
 account_jane = BankAccount("Jane", 100)
-print(account_john > account_jane)   # TypeError: '>' not supported
+print(account_john > account_jane)   # TypeError: '>' not supported print(account_john.balance > account_jane.balance) this works
 
 # Compare equal, fix with implementing __eq__()
 print(account_john == account_jane)

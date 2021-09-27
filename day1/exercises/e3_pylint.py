@@ -14,23 +14,26 @@ Fix all the issues that pylint warns about...
 Extra challenge:
 Check out the plugin for PyCharm: https://plugins.jetbrains.com/plugin/11084-pylint
 """
-import statistics, os
+#import statistics
+#import os
 
 
-def main():
-   name = input("What is your name? ")
-   greet(name)
+def main(greet):
+    """
+    function to greet someone
+    """
+    name = input("What is your name?")
+    greet(name)
 
 
 def greet(name):
-    local_variable = 42
-    print(f"Hello %s, how are you?" % name);
-    return
+    """function to greet someone and type how are you"""
+    print(f"Hello {name}, how are you?")
 
-def make_percentage():
+def make_percentage(number):
+    """function to generate percentages"""
     percentage = number / 100
-    pass
-    return f"{percentage}%"
+    return percentage
 
 
 if __name__ == "__main__":

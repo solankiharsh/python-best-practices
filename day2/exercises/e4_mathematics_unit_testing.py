@@ -15,7 +15,8 @@ Implement the "hypotenuse" function in the
 
 
 def hypotenuse(a, b):
-    ...
+    c = (a ** 2 + b ** 2) ** 0.5
+    return c
 
 
 def test_hypotenuse():

@@ -17,7 +17,7 @@ class RegularClassCustomer:
 c1 = RegularClassCustomer("John Doe", "john@doe.com")
 print(c1)
 c2 = RegularClassCustomer("John Doe", "john@doe.com")
-print(c2 == c1)
+print(c2 == c1) #This compares memory address and not the content
 
 
 # Example dataclass
