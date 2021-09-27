@@ -31,10 +31,11 @@ print(file.parent)     # the parent directory
 print(file.resolve())  # full path
 
 # Glob
-path = Path("day4/demos/")
+#path = Path("day4/demos/")
+path = Path.cwd()
 print(list(path.glob("*.py")))
 # Recursive glob
-path = Path("day4")
+#path = Path("day4")
 print(list(path.rglob("*.py")))
 
 

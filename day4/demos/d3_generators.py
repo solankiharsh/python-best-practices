@@ -51,11 +51,12 @@ def my_counter(n=0):
 counter = my_counter()
 print(next(counter))
 print(next(counter))
-
+print(next(counter))
+print(next(counter))
 
 # Optional
 import sys
 list_comp = [x for x in range(1000000)]
-generator = (x for x in range(1000000))
+generator = (x for x in range(1000000)) # smaller because it does not generates a list, it still gives me the next object
 print(sys.getsizeof(list_comp))
 print(sys.getsizeof(generator))

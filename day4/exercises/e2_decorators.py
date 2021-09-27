@@ -15,15 +15,19 @@ import time
 
 def timer(func):
     def wrapper():
-        """YOUR CODE"""
-        ...
+        start_time = time.perf_counter()
+        result = func()
+        end_time = time.perf_counter()
+        print(f"Run time was {end_time - start_time} seconds")
+        return result
     return wrapper
 
 
 @timer
 def do_something():
     """Toy function to keep Python busy"""
-    "-".join(str(n) for n in range(10000))
+    p = "-".join(str(n) for n in range(10000))
+    print(p)
     print("Doing something...")
 
 
